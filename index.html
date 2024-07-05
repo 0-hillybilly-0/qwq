@@ -91,7 +91,22 @@ a {
     text-decoration: none;
 }
 
-
+@media (max-width: 600px) {
+  .container {
+    padding: 10px;
+    text-align: center; /* Center text for smaller screens */
+  }
+  .container pre {
+    font-size: 0.8em; /* Adjust font size for smaller screens */
+  }
+  .centered-text {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    margin: 0; /* Ensure no extra margin on the pre element */
+  }
+}
 </style>
 </head>
 <audio id="myAudio" autoplay>
